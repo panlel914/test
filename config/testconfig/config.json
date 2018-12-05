@@ -1,0 +1,14 @@
+{
+    "thrall": {
+        "iscluster": false,
+        "isMaster":  false,
+        "instanceName": "thrall",
+        "server": "192.168.1.131",
+        "db": 0,
+        "port": "6379",
+        "maxIdle":   5,
+        "maxActive": 10,
+        "idleTimeout": 180
+    }
+
+}

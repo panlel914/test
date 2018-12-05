@@ -5,6 +5,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sony/gobreaker"
 	"net/http"
+	"test/break/mybreak"
 	"time"
 )
 
@@ -46,16 +47,56 @@ func Get(url string) ([]byte, error) {
 }
 
 func main() {
-	for i:=0;i<10;i++ {
-		func(i int){
-			_, err := Get("http://www.baidu.com/robots.txt")
-			if err != nil {
-				// log.Fatal(err)
-			}
+	set := mybreak.MySetting{MaxError:2, Inv:2}
+	mybreak := mybreak.NewMyBreak(set)
 
-			fmt.Println(i)
-		}(i)
+	fmt.Println("begin")
+	for i:=0;i<10;i++{
+		if i < 2 {
+			v,err := mybreak.Excute(func() (interface{}, error) {
+				return "success", nil
+			})
+			fmt.Println("value is ", v," err", err)
+		}else if i < 4{
+			v,err := mybreak.Excute(func() (interface{}, error) {
+				return "err", errors.New("error")
+			})
+			fmt.Println("value is ", v," err", err)
+		}else if i < 6{
+			time.Sleep(time.Second*3)
+			v,err := mybreak.Excute(func() (interface{}, error) {
+				return "err", errors.New("error")
+			})
+			fmt.Println("value is ", v," err", err)
+		}else{
+			v,err := mybreak.Excute(func() (interface{}, error) {
+				return "success", nil
+			})
+			fmt.Println("value is ", v," err", err)
+		}
+
+
+
 	}
+	time.Sleep(time.Second*2)
+	v,err := mybreak.Excute(func() (interface{}, error) {
+		return "success", nil
+	})
+	fmt.Println("value is ", v," err", err)
 
-	time.Sleep(time.Second*4)
+	fmt.Println("all count:", mybreak.Count)
+	fmt.Println("end")
+
+	//for i:=0;i<10;i++ {
+	//	func(i int){
+	//		_, err := Get("http://www.baidu.com/robots.txt")
+	//		if err != nil {
+	//			// log.Fatal(err)
+	//		}
+	//
+	//		fmt.Println(i)
+	//	}(i)
+	//}
+	//
+	//time.Sleep(time.Second*4)
 }
