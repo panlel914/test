@@ -1,0 +1,345 @@
+GET http://localhost:9200/testes/test/_search
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T105021.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=&q=small6
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T105007.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=&q=small6
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104955.400.json
+
+###
+
+GET http://localhost:9200?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104944.200.json
+
+###
+
+GET http://localhost:9200/test/test/?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104943.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104940.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104915.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104914.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104905.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104900.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104858.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104856.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104850.400.json
+
+###
+
+POST http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104845.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104824.400.json
+
+###
+
+GET http://localhost:9200/testes/test/_search
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-17T104810.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T104737.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T104714.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T104639.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103758.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103336.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103335.400.json
+
+###
+
+GET http://localhost:9200/test/test?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103329.400.json
+
+###
+
+PUT http://localhost:9200/test/test/3?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"mary",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103318.201.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103236.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103226.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103203.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter&pretty=
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103159.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search?q=peter
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103127.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T103035.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T102940.400.json
+
+###
+
+GET http://localhost:9200/test/test/_search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T102845.400.json
+
+###
+
+GET http://localhost:9200/test/test/search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T102836.404.json
+
+###
+
+GET http://localhost:9200/test/test/search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T102757.404.json
+
+###
+
+PUT http://localhost:9200/test/test/2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"linda",   "url":"http://www.google.com" }
+
+<> 2018-12-16T102739.201.json
+
+###
+
+PUT http://localhost:9200/test/test/1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "nama":"peter",   "url":"http://www.baidu.com" }
+
+<> 2018-12-16T102655.201.json
+
+###
+

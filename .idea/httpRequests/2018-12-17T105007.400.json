@@ -1,0 +1,30 @@
+{
+  "error": {
+    "root_cause": [
+      {
+        "type": "search_parse_exception",
+        "reason": "failed to parse search source. unknown search element [nama]",
+        "line": 1,
+        "col": 5
+      }
+    ],
+    "type": "search_phase_execution_exception",
+    "reason": "all shards failed",
+    "phase": "query",
+    "grouped": true,
+    "failed_shards": [
+      {
+        "shard": 0,
+        "index": "testes",
+        "node": "0yi3uMnsQ5GPo8leQOEQHg",
+        "reason": {
+          "type": "search_parse_exception",
+          "reason": "failed to parse search source. unknown search element [nama]",
+          "line": 1,
+          "col": 5
+        }
+      }
+    ]
+  },
+  "status": 400
+}

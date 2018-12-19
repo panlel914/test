@@ -1,0 +1,12 @@
+{
+  "name": "Man-Elephant",
+  "cluster_name": "elasticsearch",
+  "version": {
+    "number": "2.3.5",
+    "build_hash": "90f439ff60a3c0f497f91663701e64ccd01edbb4",
+    "build_timestamp": "2016-07-27T10:36:52Z",
+    "build_snapshot": false,
+    "lucene_version": "5.5.0"
+  },
+  "tagline": "You Know, for Search"
+}
